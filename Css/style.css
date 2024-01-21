@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* 初期化 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+header{
+    background-color: beige;
+    padding: 30px;
+}
+header .headerIcon{
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+header .headerTop h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+header .headerNav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+header .headerNav a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* main */
+/* main-aboutKotan */
+main .aboutKotan{
+    background-color: aqua;
+    padding: 30px;
+}
+main .aboutKotan h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+main .aboutKotan p{
+    max-width: 850px;
+    font-size: 20px;
+}
+main .aboutKotan li{
+    margin-left: 30px;
+    font-size: 20px;
+}
+main .background{
+    display: flex;
+}
+main .bgimg{
+    height: 400px;
+    width: 600px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+main .lastList{
+    margin-bottom: 15px;
+}
+/* main-snsArticle */
+main .snsArticle{
+    background-color: beige;
+    padding: 30px;
+}
+main .snsArticle h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+main .snsArticle li{
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+main .sns-article-btn{
+    display: flex;
+    justify-content: center;
+}
