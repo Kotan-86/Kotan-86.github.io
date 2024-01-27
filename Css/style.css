@@ -1,85 +1,75 @@
-@charset "utf-8";
+html{
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
-/* 初期化 */
-*{
-    padding: 0;
-    margin: 0;
+.container{
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pop{
+    font-family: 'Poppins', sans-serif;
 }
 
 /* header */
 header{
-    background-color: beige;
-    padding: 30px;
+    padding: 27px 0;
 }
-header .headerIcon{
-    display: block;
-    width: 150px;
-    height: auto;
-    margin: auto;
-    margin-bottom: 10px;
-}
-header .headerTop h1{
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-header .headerNav ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-header .headerNav a{
+header .logo{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #bbbcde;
     text-decoration: none;
-    font-size: 20px;
+}
+header .header_menu li{
+    margin-left: 40px;
+    list-style: none;
+}
+header .header_menu li a{
+    text-decoration: none;
+    color: darkslategrey;
+    transition: 0.4s;
+}
+header .header_menu li a:hover{
+    color: #bbbcde;
+    transition: 0.4s;
 }
 
 /* main */
-/* main-aboutKotan */
-main .aboutKotan{
-    background-color: aqua;
-    padding: 30px;
-}
-main .aboutKotan h2{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-main .aboutKotan p{
-    max-width: 850px;
-    font-size: 20px;
-}
-main .aboutKotan li{
-    margin-left: 30px;
-    font-size: 20px;
-}
-main .background{
+#top_image{
+    background-image: url(../images/koki_icon.png);
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    border-radius: 30px;
     display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
 }
-main .bgimg{
-    height: 400px;
-    width: 600px;
-    background-repeat: no-repeat;
-    margin-right: 20px;
+#top_image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: 1;
 }
-main .lastList{
-    margin-bottom: 15px;
-}
-/* main-snsArticle */
-main .snsArticle{
-    background-color: beige;
-    padding: 30px;
-}
-main .snsArticle h2{
-    font-size: 30px;
-    margin-bottom: 10px;
+main .top_image_inner{
+    z-index: 2;
+    color: white;
+    width: 100%;
     text-align: center;
-}
-main .snsArticle li{
-    list-style: none;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-main .sns-article-btn{
-    display: flex;
-    justify-content: center;
 }
