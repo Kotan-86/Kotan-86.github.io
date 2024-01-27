@@ -1,5 +1,4 @@
 html{
-    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -45,6 +44,7 @@ header .header_menu li a:hover{
 }
 
 /* main */
+/* top_image */
 #top_image{
     background-image: url(../images/koki_icon.png);
     background-position: center;
@@ -72,4 +72,54 @@ main .top_image_inner{
     color: white;
     width: 100%;
     text-align: center;
+}
+main .top_image_inner p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+main .top_image_inner h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+/* About_Kotan */
+#About_Kotan{
+    margin-bottom: 120px;
+}
+main .title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #bbbcde;
+    margin-bottom: 60px;
+}
+#About_Kotan h3{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+main .column-2{
+    width: 48%;
+}
+main .text{
+    line-height: 2;
+}
+main .About_Kotan_image{
+    background-image: url(../images/top.png);
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    border-radius: 30px;
+}
+main .heading{
+    font-family: 'Dancing Script', cursive;
+    font-size: 200px;
+    font-weight: 700;
+    color: #bbbcde;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-15%);
+    z-index: -1;
 }
