@@ -1,7 +1,13 @@
+/* 初期化 */
+*{
+    padding: 0;
+    margin: 0;
+}
 html{
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* global class */
 .container{
     width: 90%;
     max-width: 1120px;
@@ -10,9 +16,8 @@ html{
 }
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center;
 }
 .pop{
     font-family: 'Poppins', sans-serif;
@@ -20,43 +25,59 @@ html{
 
 /* header */
 header{
-    padding: 27px 0;
+    padding: 30px 0;
 }
-header .logo{
-    font-size: 24px;
+.title{
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: -0.04em;
-    color: #bbbcde;
+    color: #8588de;
     text-decoration: none;
 }
-header .header_menu li{
-    margin-left: 40px;
+.header_menu li{
+    margin-top: 20px;
+    margin-right: 40px;
     list-style: none;
 }
-header .header_menu li a{
+.header_menu li a{
     text-decoration: none;
     color: darkslategrey;
     transition: 0.4s;
 }
-header .header_menu li a:hover{
-    color: #bbbcde;
+.header_menu li a:hover{
+    color: #8588de;
     transition: 0.4s;
+}
+/* スマホ対応 */
+@media only screen and (max-width: 768px){
+    header .header_menu li{
+        margin-right: 20px;
+    }
 }
 
 /* main */
-/* top_image */
-#top_image{
-    background-image: url(../images/koki_icon.png);
+.section_title{
+    font-size: 30px;
+    font-weight: 500;
+    color: #8588de;
+    margin-bottom: 20px;
+}
+.text{
+    margin-left: 20px;
+    line-height: 2;
+}
+/* section-top */
+#top{
+    background-image: url(../images/top-image.jpg);
     background-position: center;
     background-size: cover;
-    height: 540px;
+    height: 350px;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    margin-bottom: 90px;
     overflow: hidden;
 }
-#top_image::before{
+#top::before{
     content: '';
     width: 100%;
     height: 100%;
@@ -64,62 +85,61 @@ header .header_menu li a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.4;
+    opacity: 0.3;
     z-index: 1;
 }
-main .top_image_inner{
+.top_inner{
     z-index: 2;
     color: white;
     width: 100%;
     text-align: center;
 }
-main .top_image_inner p{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 16px;
+/* section-About */
+#About{
+    padding-top: 30px;
 }
-main .top_image_inner h1{
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 30px;
+.box-30{
+    width: 30%;
 }
-/* About_Kotan */
-#About_Kotan{
-    margin-bottom: 120px;
-}
-main .title{
-    font-size: 20px;
-    font-weight: 500;
-    color: #bbbcde;
-    margin-bottom: 60px;
-}
-#About_Kotan h3{
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-main .column-2{
-    width: 48%;
-}
-main .text{
-    line-height: 2;
-}
-main .About_Kotan_image{
-    background-image: url(../images/top.png);
+.about_image{
+    background-image: url(../images/aboutKotan.png);
     background-position: center;
     background-size: cover;
-    height: 320px;
+    height: 300px;
     border-radius: 30px;
 }
-main .heading{
-    font-family: 'Dancing Script', cursive;
-    font-size: 200px;
-    font-weight: 700;
-    color: #bbbcde;
-    opacity: 0.2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(-15%);
-    z-index: -1;
+.box-70{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section-News */
+#News{
+    padding-top: 30px;
+}
+/* section-Activity */
+#Activity{
+    padding-top: 30px;
+}
+/* section-Article */
+#Article{
+    padding-top: 30px;
+}
+/* footer */
+footer{
+    color: darkslategray;
+    padding: 30px;
+    text-align: center;
+}
+.sns-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sns-btn li{
+    list-style: none;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
