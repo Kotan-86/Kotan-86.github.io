@@ -66,6 +66,10 @@ header{
     margin-left: 20px;
     line-height: 2;
 }
+h3{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 /* section-top */
 #top{
     background-image: url(../images/top-image.jpg);
@@ -121,6 +125,9 @@ header{
 /* section-Activity */
 #Activity{
     padding-top: 30px;
+}
+#Activity div{
+    margin-bottom: 20px;
 }
 /* section-Article */
 #Article{
