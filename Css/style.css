@@ -70,6 +70,22 @@ h3{
     margin-left: 10px;
     margin-bottom: 10px;
 }
+.newicon{
+    background: #F00;
+    /*背景色*/
+    color: #FFF;
+    /*文字色*/
+    font-size: 70%;
+    /*文字サイズ*/
+    line-height: 2;
+    padding: 2px 5px;
+}
+dt{
+    float: left;
+}
+dd{
+    margin-left: 100px;
+}
 /* section-top */
 #top{
     background-image: url("../images/top-image.jpg");
@@ -140,7 +156,7 @@ h3{
 }
 /* section-Article */
 #Article{
-    padding-top: 30px;
+    padding-top: 10px;
 }
 /* footer */
 footer{
@@ -152,6 +168,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .sns-btn li{
     list-style: none;
