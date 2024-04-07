@@ -122,6 +122,15 @@ h3{
 #News{
     padding-top: 30px;
 }
+.text a{
+    text-decoration: solid;
+    color: black;
+    transition: 0.4s;
+}
+.text a:hover{
+    color: #8588de;
+    transition: 0.4s;
+}
 /* section-Activity */
 #Activity{
     padding-top: 30px;
