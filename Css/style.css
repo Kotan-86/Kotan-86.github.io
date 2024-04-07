@@ -72,7 +72,7 @@ h3{
 }
 /* section-top */
 #top{
-    background-image: url(../images/top-image.jpg);
+    background-image: url(images/top-image.jpg);
     background-position: center;
     background-size: cover;
     height: 350px;
@@ -106,7 +106,7 @@ h3{
     width: 30%;
 }
 .about_image{
-    background-image: url(../images/aboutKotan.png);
+    background-image: url(images/aboutKotan.png);
     background-position: center;
     background-size: cover;
     height: 300px;
