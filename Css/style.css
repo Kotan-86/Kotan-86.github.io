@@ -147,6 +147,20 @@ dd{
     color: #8588de;
     transition: 0.4s;
 }
+.archive{
+    margin-left: 120px;
+    line-height: 2;
+    margin-top: 5px;
+}
+.archive a{
+    text-decoration: solid;
+    color: black;
+    transition: 0.4s;
+}
+.archive a:hover{
+    color: #8588de;
+    transition: 0.4s;
+}
 /* section-Activity */
 #Activity{
     padding-top: 30px;
@@ -157,6 +171,10 @@ dd{
 /* section-Article */
 #Article{
     padding-top: 10px;
+}
+/* section-Archive */
+#Archive{
+    padding-top: 30px;
 }
 /* footer */
 footer{
